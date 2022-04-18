@@ -1,0 +1,8 @@
+body{
+  font-family: "Ubuntu";
+  background-color: #00AFC1;
+}
+.header{
+  position: relative;
+  top: 20%;
+}
