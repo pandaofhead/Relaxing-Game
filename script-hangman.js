@@ -1,3 +1,4 @@
+// Author: Hongjin Quan
 const wordEl = document.getElementById('word');
 const wrongLettersEl = document.getElementById('wrong-letters');
 const playAgainBtn = document.getElementById('play-button');
@@ -34,7 +35,8 @@ function displayWord() {
 			)
 			.join('')}
   `;
-
+	// fetch word from the interface
+	// then remove the space and new line
 	const innerWord = wordEl.innerText.replace(/[ \n]/g, '');
 
 	if (innerWord === selectedWord) {
@@ -46,7 +48,7 @@ function displayWord() {
 	}
 }
 
-// Update the wrong letters
+// Update wrong guess on hangman
 function updateWrongLettersEl() {
 	// Display wrong letters
 	wrongLettersEl.innerHTML = `
